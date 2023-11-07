@@ -1,5 +1,4 @@
-'use client'
-
+"use client"
 import Button from "../(component)/button/Button"
 import Navbar from "../(component)/navbar/Navbar"
 import NextBtn from "../(component)/nextBtn/NextBtn"
