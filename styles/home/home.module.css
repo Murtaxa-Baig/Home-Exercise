@@ -1,0 +1,47 @@
+.mainDiv {
+    margin-top: 20px;
+    padding: 0px 15px;
+}
+
+
+
+
+
+.contentDiv {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emojiSection {
+    background-color: #DAF5FE;
+    height: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emptyDiv {
+    background-color: #DAF5FE;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+
+.emojiDiv {
+    background-color: #DAF5FE;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+

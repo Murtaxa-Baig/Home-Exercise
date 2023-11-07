@@ -1,0 +1,36 @@
+.mainDiv {
+    margin-top: 20px;
+    padding: 0px 15px;
+}
+
+.contentDiv {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.radioDiv {
+    width: 100%;
+    height: auto;
+    padding: 24px 20px;
+    border: 2px solid #DAF5FE;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    margin: 5px 0px;
+}
+.radio{
+    height: 24px;
+    width: 24px;
+}
+
+.subDiv {
+    text-align: center;
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+}
