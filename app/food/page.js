@@ -20,19 +20,19 @@ import { useState } from "react"
 
 
 export default function Food() {
-    const [lactose, useLacktose] = useState(false)
-    const [gluten, useGluten] = useState(false)
-    const [fructose, useFructose] = useState(false)
+    const [lactose, setLacktose] = useState(false)
+    const [gluten, setGluten] = useState(false)
+    const [fructose, setFructose] = useState(false)
     const lactoseHandler = () => {
-        useLacktose(!lactose)
+        setLacktose(!lactose)
     }
 
     const glutenHandler = () => {
-        useGluten(!gluten)
+        setGluten(!gluten)
     }
 
     const fructoseHandler = () => {
-        useFructose(!fructose)
+        setFructose(!fructose)
     }
 
 
