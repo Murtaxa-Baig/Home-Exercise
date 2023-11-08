@@ -11,14 +11,14 @@ export default function Navbar(props) {
 
 
     const previousPage = () => {
-      router.push(props.navigateTo)
+        router.push(props.navigateTo)
     }
     return (
         <>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                <button 
-                onClick={previousPage}
-                className={styles.backBtn}>
+                <button
+                    onClick={previousPage}
+                    className={styles.backBtn}>
                     <Image
                         src={backimage}
                         width={32}
@@ -30,8 +30,8 @@ export default function Navbar(props) {
                     <ProgressBar
                         completed={props.progress}
                         isLabelVisible={false}
-                        height={5}
-                        width={126}
+                        height="5px"
+                        width={"126"}
                         bgColor={'#B9E6F5'}
                     />
 

@@ -23,6 +23,8 @@ export default function Food() {
     const [lactose, setLacktose] = useState(false)
     const [gluten, setGluten] = useState(false)
     const [fructose, setFructose] = useState(false)
+    const [btnTitle, setBtnTitle] = useState(null)
+
     const lactoseHandler = () => {
         setLacktose(!lactose)
     }
@@ -35,6 +37,11 @@ export default function Food() {
         setFructose(!fructose)
     }
 
+    const clickHandler = (title) => {
+        setBtnTitle(title)
+        // console.log(title);
+
+    }
 
 
 
@@ -55,19 +62,23 @@ export default function Food() {
                     <div style={{ textAlign: "center" }}>
                         <p className={styles.text}>Diet</p>
                         <div className={styles.btnDiv}>
-                            <Button title="🥩 Omnivore" />
-                            <Button title="🐟 Pescatarian" />
+                            <Button title="🥩 Omnivore" clickHandler={() => clickHandler("🥩 Omnivore")} btnTitle={btnTitle} />
+                            <Button title="🐟 Pescatarian" clickHandler={() => clickHandler("🐟 Pescatarian")} btnTitle={btnTitle} />
                         </div>
                         <div className={styles.btnDiv}>
-                            <Button title="🌱 Vegan" />
-                            <Button title="🚫🥩 Vegetarian" />
+                            <Button title="🌱 Vegan" clickHandler={() => clickHandler("🌱 Vegan")} btnTitle={btnTitle} />
+                            <Button title="🚫🥩 Vegetarian" clickHandler={() => clickHandler("🚫🥩 Vegetarian")} btnTitle={btnTitle} />
                         </div>
                         <p className={styles.text}>Cuisine</p>
                         <div
                             className={styles.countryBtn}
                             style={{ marginBottom: 20 }}
                         >
-                            <button className={styles.btns}>
+                            <button
+                                className={styles.btns}
+                                style={{ backgroundColor: btnTitle == "jp" ? "#D9F5FE80" : 'transparent' }}
+                                onClick={() => clickHandler("jp")}
+                            >
                                 <Image
                                     src={jp}
                                     width={16}
@@ -75,7 +86,11 @@ export default function Food() {
                                     alt="Picture of the author"
                                 />
                             </button>
-                            <button className={styles.btns}>
+                            <button
+                                className={styles.btns}
+                                style={{ backgroundColor: btnTitle == "it" ? "#D9F5FE80" : 'transparent' }}
+                                onClick={() => clickHandler("it")}
+                            >
                                 <Image
                                     src={it}
                                     width={16}
@@ -83,7 +98,11 @@ export default function Food() {
                                     alt="Picture of the author"
                                 />
                             </button>
-                            <button className={styles.btns}>
+                            <button
+                                className={styles.btns}
+                                style={{ backgroundColor: btnTitle == "vn" ? "#D9F5FE80" : 'transparent' }}
+                                onClick={() => clickHandler("vn")}
+                            >
                                 <Image
                                     src={vn}
                                     width={16}
@@ -91,7 +110,11 @@ export default function Food() {
                                     alt="Picture of the author"
                                 />
                             </button>
-                            <button className={styles.btns}>
+                            <button
+                                className={styles.btns}
+                                style={{ backgroundColor: btnTitle == "es" ? "#D9F5FE80" : 'transparent' }}
+                                onClick={() => clickHandler("es")}
+                            >
                                 <Image
                                     src={es}
                                     width={16}
@@ -99,7 +122,11 @@ export default function Food() {
                                     alt="Picture of the author"
                                 />
                             </button>
-                            <button className={styles.btns}>
+                            <button
+                                className={styles.btns}
+                                style={{ backgroundColor: btnTitle == "cn" ? "#D9F5FE80" : 'transparent' }}
+                                onClick={() => clickHandler("cn")}
+                            >
                                 <Image
                                     src={cn}
                                     width={16}
@@ -109,7 +136,11 @@ export default function Food() {
                             </button>
                         </div>
                         <div className={styles.countryBtn}>
-                            <button className={styles.btns}>
+                            <button
+                                className={styles.btns}
+                                style={{ backgroundColor: btnTitle == "ind" ? "#D9F5FE80" : 'transparent' }}
+                                onClick={() => clickHandler("ind")}
+                            >
                                 <Image
                                     src={ind}
                                     width={16}
@@ -117,7 +148,11 @@ export default function Food() {
                                     alt="Picture of the author"
                                 />
                             </button>
-                            <button className={styles.btns}>
+                            <button
+                                className={styles.btns}
+                                style={{ backgroundColor: btnTitle == "us" ? "#D9F5FE80" : 'transparent' }}
+                                onClick={() => clickHandler("us")}
+                            >
                                 <Image
                                     src={us}
                                     width={16}
@@ -125,7 +160,11 @@ export default function Food() {
                                     alt="Picture of the author"
                                 />
                             </button>
-                            <button className={styles.btns}>
+                            <button
+                                className={styles.btns}
+                                style={{ backgroundColor: btnTitle == "th" ? "#D9F5FE80" : 'transparent' }}
+                                onClick={() => clickHandler("th")}
+                            >
                                 <Image
                                     src={th}
                                     width={16}
@@ -133,7 +172,11 @@ export default function Food() {
                                     alt="Picture of the author"
                                 />
                             </button>
-                            <button className={styles.btns}>
+                            <button
+                                className={styles.btns}
+                                style={{ backgroundColor: btnTitle == "turkey" ? "#D9F5FE80" : 'transparent' }}
+                                onClick={() => clickHandler("turkey")}
+                            >
                                 <Image
                                     src={turkey}
                                     width={16}
@@ -141,7 +184,11 @@ export default function Food() {
                                     alt="Picture of the author"
                                 />
                             </button>
-                            <button className={styles.btns}>
+                            <button
+                                className={styles.btns}
+                                style={{ backgroundColor: btnTitle == "mx" ? "#D9F5FE80" : 'transparent' }}
+                                onClick={() => clickHandler("mx")}
+                            >
                                 <Image
                                     src={mx}
                                     width={16}
