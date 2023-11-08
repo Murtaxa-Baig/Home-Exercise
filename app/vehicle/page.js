@@ -69,39 +69,6 @@ export default function Vehicle() {
                                 )
                             })
                         }
-
-
-                        {/* <div className={styles.radioDiv}>
-                            <input type="radio" name='radio' className={styles.radio} />
-                            <div className={styles.subDiv}>
-                                <p style={{ fontSize: 14 }}>🏍️ Bike </p>
-                                <p style={{ fontSize: 10 }}>Two wheels, endless curves...
-                                    Discover the curviest roads near you!</p>
-                            </div>
-                        </div>
-                        <div className={styles.radioDiv}>
-                            <input type="radio" name='radio' className={styles.radio} />
-                            <div className={styles.subDiv}>
-                                <p style={{ fontSize: 14 }}>🚌 Bus  </p>
-                                <p style={{ fontSize: 10 }}>Sit back and relax! We{"'"}ll find the cheapest and quickest bus for you!</p>
-                            </div>
-                        </div>
-                        <div className={styles.radioDiv}>
-                            <input type="radio" name='radio' className={styles.radio} />
-                            <div className={styles.subDiv}>
-                                <p style={{ fontSize: 14 }}>🚶Walk </p>
-                                <p style={{ fontSize: 10 }}>We{"'"}ll guide you to hidden gems,
-                                    just a walk away!</p>
-                            </div>
-                        </div>
-                        <div className={styles.radioDiv}>
-                            <input type="radio" name='radio' className={styles.radio} />
-                            <div className={styles.subDiv}>
-                                <p style={{ fontSize: 14 }}>🚆 Train </p>
-                                <p style={{ fontSize: 10 }}>Get the best train routes and
-                                    fares to fuel your wanderlust!</p>
-                            </div>
-                        </div> */}
                     </div>
 
 

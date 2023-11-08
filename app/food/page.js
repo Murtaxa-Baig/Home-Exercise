@@ -39,8 +39,6 @@ export default function Food() {
 
     const clickHandler = (title) => {
         setBtnTitle(title)
-        // console.log(title);
-
     }
 
 
